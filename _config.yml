@@ -1,0 +1,21 @@
+title: "Your group's name here"
+
+dw_group: "Your group's name here"
+dw_disclaimer: "Set `dw_disclaimer` in the config file to replace this disclaimer."
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /news/:year-:month-:day/:title/
+

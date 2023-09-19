@@ -1,0 +1,11 @@
+*.gem
+.bundle
+.jekyll-cache
+.sass-cache
+_site
+Gemfile.lock
+
+_data/remote/*
+!_data/remote/.gitkeep
+
+.DS_Store
