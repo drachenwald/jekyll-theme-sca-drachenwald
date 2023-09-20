@@ -1,5 +1,9 @@
 ---
 ---
 
+$dw-dark: {{ site.dw_colours.dark }};
+$dw-light: {{ site.dw_colours.light }};
+$dw-dark-highlight: {{ site.dw_colours.dark_highlight }};
+
 @charset "utf-8";
 @import "jekyll-theme-sca-drachenwald";

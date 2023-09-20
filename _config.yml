@@ -3,6 +3,10 @@ title: "Your group's name here"
 dw_group: "Your group's name here"
 dw_disclaimer: "Set `dw_disclaimer` in the config file to replace this disclaimer."
 
+dw_colours:
+  dark: "#003300"
+  light: "#ffff00"
+  dark_highlight: "#006600"
 
 defaults:
   -
@@ -11,11 +15,3 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      permalink: /news/:year-:month-:day/:title/
-
