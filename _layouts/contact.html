@@ -1,0 +1,24 @@
+---
+title: Contacts
+layout: page
+---
+
+<link rel="preconnect" href="https://dis.drachenwald.sca.org" />
+
+{{ content }}
+
+{% assign grouplist = site.dw_contact_groups | default:site.dw_group %}
+{% for group in grouplist %}
+  {% assign groupdata = site.data.remote.groups | where_exp:"item", "item.group contains group" | first %}
+  <div class="mb-4">
+
+    <div class="dw-live-officers" lang="en" display="withdesc"
+      group="{{ groupdata.parent }}-{{ groupdata.group }}">
+      Loading...
+    </div>
+
+  </div>
+{% endfor %}
+
+
+<script src="https://scripts.drachenwald.sca.org/regnum/regnum-fetch.js"></script>
