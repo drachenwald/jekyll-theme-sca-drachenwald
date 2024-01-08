@@ -67,6 +67,45 @@ Optionally:
     - Place a JPG of a banner image, with the filename `default-banner.jpg`.
       This is ideally at least 1200px across, and relatively dark so that
       bright text will stand out over it.
+    - If you intend to use the default home page, you may place three
+      images in this directory to use for the main navigation. Ideally
+      600x400 pixels.
+        - `splash-about.jpg`
+        - `splash-events.jpg`
+        - `splash-contacts.jpg`
+    - If you intend to use the default about page, you may place an
+      image in this directory to use as the side image. Ideally 800x533 pixels.
+        - `about.jpg`
+
+- in the top level directory, add four files to get the default pages.
+    - `index.html` with contents:
+        ```
+        ---
+        layout: home
+        ---
+        ```
+    - `about.html` (or `about.md`) with contents:
+        ```
+        ---
+        layout: about
+        title: About
+        ---
+        ```
+    - `contact.html` (or `contact.md`) with contents:
+        ```
+        ---
+        title: Contacts
+        layout: contact
+        ---
+        ```
+    - `events.html` (or `events.md`) with contents:
+        ```
+        ---
+        layout: events
+        title: Events
+        ---
+        ```
+
 
 - Create a file `_data/nav.yml`
     - This will override the navigation bar. See the example below for the
@@ -111,8 +150,19 @@ top:
 
 ## Overriding pages
 
-A basic installation will provide four pages: the index, about, events and
-contacts. You can override these by adding pages with the same name.
+Instead of using the default pages as above, you may replace these
+pages with your own files of the same name. Begin each page with
+at least these four lines:
+
+```
+---
+title: Title of the Page
+layout: page
+---
+```
+
+Substitute "Title of the Page" with something appropriate, but
+`layout: page` and the triple-dashes are essential.
 
 # Developing the theme
 
