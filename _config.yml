@@ -1,12 +1,19 @@
 title: "Your group's name here"
 
-dw_group: "Dun in Mara"
+dw_group: "Your group's name here"
 dw_disclaimer: "Set `dw_disclaimer` in the config file to replace this disclaimer."
 
 dw_colours:
   dark: "#003300"
   light: "#ffff00"
   dark_highlight: "#006600"
+
+exclude:
+  - "*.gemspec"
+  - "*.gem"
+  - "Dockerfile"
+  - "docker-compose.yml"
+  - "README.md"
 
 defaults:
   -
