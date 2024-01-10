@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		<title>{{ page.title | defult: site.title }}</title>
+		<title>{{ page.title | default: site.title }}</title>
 		<meta charset="utf-8" />
     <meta property="og:image" content="{{ site.url }}{{ page.banner | default: '/assets/img/default-banner.jpg' }}" />
     <meta property="og:title"              content="{{ page.title }}" />
@@ -102,10 +102,10 @@
     <div class="banner" style="background-image: url('{{ page.banner | default: '/assets/img/default-banner.jpg' }}');">
       <div class="container"> 
         {% if page.subtitle %}
-          <h1 class="display-5 pt-5">{{ page.title | default:site.title }}</h1>
+          <h1 class="display-5 pt-5">{{ page.title | default: site.title }}</h1>
           <h3 class="pb-5">{{ page.subtitle }}</h3>
         {% else %}
-          <h1 class="display-5 pt-5 pb-5">{{ page.title | default:site.title }}</h1>
+          <h1 class="display-5 pt-5 pb-5">{{ page.title | default: site.title }}</h1>
         {% endif %}
       </div>
     </div>
