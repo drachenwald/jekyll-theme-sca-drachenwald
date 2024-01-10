@@ -8,6 +8,12 @@ Add this line to your Jekyll site's `Gemfile`:
 gem "jekyll-theme-sca-drachenwald"
 ```
 
+or, if that doesn't work,
+
+```ruby
+gem "jekyll-theme-sca-drachenwald", github: "drachenwald/jekyll-theme-sca-drachenwald"
+```
+
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
